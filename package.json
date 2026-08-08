@@ -1,0 +1,36 @@
+{
+  "name": "react-native-dynamic-responsive",
+  "version": "1.0.0",
+  "description": "Production-ready dynamic responsive setup for React Native apps.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-responsive",
+    "expo",
+    "react-native-cli",
+    "best-responsive-package",
+    "responsive-design",
+    "scale",
+    "tablet",
+    "foldable",
+    "dynamic",
+    "size-matters",
+    "react-native-size-matters"
+  ],
+  "author": "Dharmendra (https://www.linkedin.com/in/dharmendra-appdeveloper)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-native": "^0.72.0",
+    "typescript": "^5.0.0"
+  }
+}
