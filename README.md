@@ -24,7 +24,7 @@ Build once and adapt your interface across phones, landscape layouts, tablets, a
 
 <p align="center">
   <img
-    src="./assets/responsive-preview.png"
+    src="https://gitlab.com/code_dharmendra/react-native-dynamic-responsive/-/raw/main/assets/responsive-preview.png"
     alt="react-native-dynamic-responsive showing responsive UI across phone, landscape, tablet and foldable layouts"
     width="100%"
   />
