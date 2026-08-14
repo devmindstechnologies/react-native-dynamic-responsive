@@ -1,6 +1,6 @@
 {
   "name": "react-native-dynamic-responsive",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Production-ready dynamic responsive setup for React Native apps.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
