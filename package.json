@@ -20,7 +20,10 @@
     "foldable",
     "dynamic",
     "size-matters",
-    "react-native-size-matters"
+    "react-native-size-matters",
+    "responsive",
+    "responsive-ui",
+    "dynamic-responsive"
   ],
   "author": "Dharmendra (https://www.linkedin.com/in/dharmendra-appdeveloper)",
   "license": "MIT",
