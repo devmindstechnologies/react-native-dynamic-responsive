@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, DependencyList } from 'react';
 import { Dimensions, PixelRatio, useWindowDimensions, StyleSheet } from 'react-native';
 
 /**
@@ -129,18 +129,55 @@ export const useResponsive = (): ResponsiveUtils => {
 };
 
 /**
- * Hook to create dynamic stylesheets that recalculate on dimension changes.
+ * Hook to create dynamic stylesheets that recalculate on dimension changes,
+ * theme switching, or custom dependency updates.
+ *
  * Usage:
- * const styles = useStyles((r) => ({
- *   container: { padding: r.ms(16) }
- * }));
+ * 1. Responsive only:
+ *    const styles = useStyles((r) => ({
+ *      container: { padding: r.ms(16) }
+ *    }));
+ *
+ * 2. With Theme / Custom Props (recommended for dynamic theming):
+ *    const styles = useStyles((r, theme) => ({
+ *      container: { backgroundColor: theme.colors.background, padding: r.ms(16) }
+ *    }), theme);
+ *
+ * 3. With Dependency Array:
+ *    const styles = useStyles((r) => ({
+ *      container: { backgroundColor: theme.colors.background, padding: r.ms(16) }
+ *    }), [theme]);
  */
 export function useStyles<T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>>(
-  createStyles: (utils: ResponsiveUtils) => T | StyleSheet.NamedStyles<T>
+  createStyles: (utils: ResponsiveUtils) => T | StyleSheet.NamedStyles<T>,
+  deps?: DependencyList
+): T;
+
+export function useStyles<
+  T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>,
+  P = undefined
+>(
+  createStyles: (utils: ResponsiveUtils, props: P) => T | StyleSheet.NamedStyles<T>,
+  props?: P,
+  deps?: DependencyList
+): T;
+
+export function useStyles<
+  T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>,
+  P = undefined
+>(
+  createStyles: (utils: ResponsiveUtils, props?: P) => T | StyleSheet.NamedStyles<T>,
+  propsOrDeps?: P | DependencyList,
+  deps?: DependencyList
 ): T {
   const responsive = useResponsive();
-  
-  // We only want to recreate the stylesheet if responsive changes (width/height), NOT on every render.
-  // Assuming createStyles is a pure function that relies ONLY on the 'utils' parameter.
-  return useMemo(() => StyleSheet.create(createStyles(responsive) as any), [responsive.width, responsive.height]);
+
+  const isDepsArray = Array.isArray(propsOrDeps);
+  const resolvedProps = (isDepsArray ? undefined : propsOrDeps) as P;
+  const extraDeps = (isDepsArray ? (propsOrDeps as DependencyList) : deps) || [];
+
+  return useMemo(
+    () => StyleSheet.create(createStyles(responsive, resolvedProps) as any),
+    [responsive.width, responsive.height, resolvedProps, ...extraDeps]
+  );
 }
