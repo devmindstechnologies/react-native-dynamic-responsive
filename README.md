@@ -1,5 +1,11 @@
 # 📱 react-native-dynamic-responsive
 
+[![npm version](https://img.shields.io/npm/v/react-native-dynamic-responsive.svg?style=flat-square&color=blue)](https://www.npmjs.com/package/react-native-dynamic-responsive)
+[![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](https://github.com/devmindstechnologies/react-native-dynamic-responsive/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/devmindstechnologies/react-native-dynamic-responsive?style=flat-square)](https://github.com/devmindstechnologies/react-native-dynamic-responsive/issues)
+[![GitHub stars](https://img.shields.io/github/stars/devmindstechnologies/react-native-dynamic-responsive?style=flat-square)](https://github.com/devmindstechnologies/react-native-dynamic-responsive/stargazers)
+[![Maintained by DevMinds Technologies](https://img.shields.io/badge/Maintained%20by-DevMinds%20Technologies-6366f1?style=flat-square)](https://devminds.in)
+
 > **Dynamic, Lightweight & TypeScript-First Responsive Styling with Full Theme Support for React Native & Expo.**
 
 Build React Native interfaces that adapt effortlessly to different screen sizes, orientations, tablets, foldable devices, and dynamic themes.
@@ -266,13 +272,29 @@ const staticStyles = StyleSheet.create({
 
 ---
 
-## 👨‍💻 Author
+## 🤝 Contributing & Raising Issues
 
-**Dharmendra**  
-[LinkedIn Profile](https://www.linkedin.com/in/dharmendra-appdeveloper)
+We welcome contributions, bug reports, and suggestions from anyone in the developer community!
+
+- 🐛 **Found a bug or issue?** Please report it on [GitHub Issues](https://github.com/devmindstechnologies/react-native-dynamic-responsive/issues).
+- 💡 **Have a feature idea?** Submit a [Feature Request](https://github.com/devmindstechnologies/react-native-dynamic-responsive/issues/new?template=feature_request.md).
+- 🛠️ **Want to contribute code?** Check out our [CONTRIBUTING.md](./CONTRIBUTING.md) guide and submit a Pull Request.
+
+---
+
+## 🏢 Maintained by DevMinds Technologies
+
+This package is actively developed and maintained by **[DevMinds Technologies](https://devminds.in)**.
+
+We partner with ambitious startups and enterprises to architect, design, and deploy scalable mobile apps, web systems, and cloud infrastructure using React Native, TypeScript, and modern cloud architecture.
+
+- 🌐 **Website**: [devminds.in](https://devminds.in)
+- ✉️ **Inquiries & Custom Software**: [contact@devminds.in](mailto:contact@devminds.in)
+- 👨‍💻 **Lead Author**: [Dharmendra](https://www.linkedin.com/in/dharmendra-appdeveloper)
 
 ---
 
 ## 📄 License
 
-MIT © [Dharmendra](https://www.linkedin.com/in/dharmendra-appdeveloper)
+MIT © [DevMinds Technologies](https://devminds.in) & [Dharmendra](https://www.linkedin.com/in/dharmendra-appdeveloper)
+

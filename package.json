@@ -4,6 +4,10 @@
   "description": "Production-ready dynamic responsive setup for React Native apps.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "homepage": "https://github.com/devmindstechnologies/react-native-dynamic-responsive#readme",
+  "bugs": {
+    "url": "https://github.com/devmindstechnologies/react-native-dynamic-responsive/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devmindstechnologies/react-native-dynamic-responsive.git"
@@ -29,7 +33,10 @@
     "responsive-ui",
     "dynamic-responsive"
   ],
-  "author": "Dharmendra (https://www.linkedin.com/in/dharmendra-appdeveloper)",
+  "author": "DevMinds Technologies <contact@devminds.in> (https://devminds.in)",
+  "contributors": [
+    "Dharmendra (https://www.linkedin.com/in/dharmendra-appdeveloper)"
+  ],
   "license": "MIT",
   "peerDependencies": {
     "react": "*",
