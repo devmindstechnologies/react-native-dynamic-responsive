@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/code_dharmendra/react-native-dynamic-responsive.git"
+    "url": "git+https://github.com/devmindstechnologies/react-native-dynamic-responsive.git"
   },
   "scripts": {
     "build": "tsc",

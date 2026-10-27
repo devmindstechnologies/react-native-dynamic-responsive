@@ -6,7 +6,7 @@ Build React Native interfaces that adapt effortlessly to different screen sizes,
 
 <p align="center">
   <img
-    src="https://gitlab.com/code_dharmendra/react-native-dynamic-responsive/-/raw/main/assets/responsive-preview.png"
+    src="https://raw.githubusercontent.com/devmindstechnologies/react-native-dynamic-responsive/main/assets/responsive-preview.png"
     alt="react-native-dynamic-responsive showing responsive UI across phone, landscape, tablet and foldable layouts"
     width="100%"
   />
